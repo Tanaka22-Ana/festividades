@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processando Dados...</title>
+    <meta http-equiv="refresh" content="3;url=index.html"> <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f8f8;
+            padding: 50px;
+        }
+        h1 { color: #006400; }
+        p { margin-top: 20px; color: #333; }
+    </style>
+</head>
+<body>
+    <h1>Processando Envio...</h1>
+    <p>Aguarde enquanto sua mensagem é registrada.</p>
+    <p>Se você não for redirecionado em 3 segundos, <a href="index.html">clique aqui</a>.</p>
+
+    <script>
+        alert("Dados enviados com sucesso!");
+
+        setTimeout(function() {
+            window.location.href = "index.html"; 
+        }, 1000); 
+    </script>
+</body>
+</html>
