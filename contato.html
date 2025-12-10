@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Guia de Festividades</title>
+    <meta name="description" content="Fale conosco e envie suas dúvidas, sugestões ou pedidos de informação sobre as festividades.">
+    <meta name="keywords" content="contato, formulário, mensagem, informações">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✉️</text></svg>">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header id="cabecalho"><h1>Guia de Festividades de Fim de Ano</h1></header>
+        <nav id="menuprincipal">
+            <div class="menu-toggle"></div>
+            <ul id="listaMenu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="celebracoes.html">Celebrações & Atividades</a></li>
+                <li><a href="personalidades.html">Personagens</a></li>
+                <li><a href="organizacao.html">Organização</a></li>
+                <li><a href="videos.html">Vídeos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <main id="corpo">
+            <section class="conteudo-total">
+                <h2>Fale Conosco</h2>
+                <p>Utilize o formulário abaixo para enviar suas dúvidas ou sugestões sobre o guia de festividades.</p>
+
+                <form action="processa.html" method="POST" onsubmit="return validarFormulario(event)">
+                    <label for="nome">Nome Completo (Obrigatório):</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome completo" maxlength="200" required>
+                    
+                    <label for="email">E-mail (Obrigatório):</label>
+                    <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+                    
+                    <label for="assunto">Assunto (Obrigatório, máx. 100 caracteres):</label>
+                    <input type="text" id="assunto" name="assunto" placeholder="Assunto da sua mensagem" maxlength="100" required>
+                    
+                    <label for="mensagem">Mensagem (Obrigatório):</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem aqui..." required></textarea>
+                    
+                    <div class="botoes-form">
+                        <button type="submit">Enviar</button>
+                        <button type="reset">Limpar</button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+        <footer id="rodape"><p>© 2025 Guia de Festividades. Todos os direitos reservados. Projeto Desenvolvido para Desenvolvimento Web I - IFMS.</p></footer>
+    </div>
+</body>
+</html>
