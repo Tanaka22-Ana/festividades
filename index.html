@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Um guia para suas festividades</title>
+    <meta name="description" content="Explore tradições, receitas e inspirações para tornar suas festividades de fim de ano ainda mais especiais.">
+    <meta name="keywords" content="festividades, natal, ano novo, celebrações, decoração, receitas, guia">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎄</text></svg>">
+    
+    <link rel="stylesheet" href="css/estilo.css">
+    
+    </head>
+<body>
+    <div class="container">
+        <header id="cabecalho">
+            <h1>Guia de Festividades de Fim de Ano</h1>
+        </header>
+
+        <nav id="menuprincipal">
+            <div class="menu-toggle"></div>
+            <ul id="listaMenu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="celebracoes.html">Celebrações & Atividades</a></li>
+                <li><a href="personalidades.html">Personagens</a></li>
+                <li><a href="organizacao.html">Organização</a></li>
+                <li><a href="videos.html">Vídeos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+
+        <main id="corpo">    
+            <section id="conteudo-home">
+                <h2>Bem-vindo ao Guia Oficial!</h2>
+                <p>Aqui você entende e aprende como organizar as suas festas de fim de ano!</p>
+
+                <h3>Destaques</h3>
+                <div class="cards-grid">
+                    <article class="card">
+                        <img src="imagens/image (1).png" alt="Decorações e Ambientes" style="width: 100%; max-height: 150px; object-fit: cover; border-radius: 4px;">
+                        <h3>Decorações e Ambientes</h3>
+                        <p>Dicas e inspirações para criar a atmosfera mágica de fim de ano na sua casa.</p>
+                        <a href="organizacao.html#decoracao" class="card-link">Ver Dicas</a>
+                    </article>
+                    
+                    <article class="card">
+                        <img src="imagens/image.png" alt="Tradições e Celebrações" style="width: 100%; max-height: 150px; object-fit: cover; border-radius: 4px;">
+                        <h3>Tradições e Celebrações</h3>
+                        <p>Conheça os rituais e costumes mais populares do Natal e Ano-Novo.</p>
+                        <a href="celebracoes.html" class="card-link">Explorar</a>
+                    </article>
+                </div>
+            </section>
+
+            <aside id="aside-lateral">
+                <h3>Conteúdos Relacionados</h3>
+                <nav>
+                    <ul>
+                        <li><a href="organizacao.html#economica">Ideias rápidas de decoração econômica</a></li>
+                        <li><a href="organizacao.html#ceia">Como montar a mesa de fim de ano</a></li>
+                        <li><a href="organizacao.html#cronograma">Dicas para confraternizações em família</a></li>
+                        <li><a href="organizacao.html#seguranca">Segurança com fogos e iluminação</a></li>
+                    </ul>
+                </nav>
+            </aside>
+            
+        </main>
+
+        <footer id="rodape">
+            <p>© 2025 Ana&Dani Festividades. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const menuLista = document.getElementById('listaMenu'); 
+
+            if (menuToggle && menuLista) {
+                menuToggle.addEventListener('click', function() {
+                    menuLista.classList.toggle('active');
+                });
+            }
+        });
+    </script>
+</body>
+</html>
